@@ -1,1 +1,0 @@
-import "./HearingPage.scss";

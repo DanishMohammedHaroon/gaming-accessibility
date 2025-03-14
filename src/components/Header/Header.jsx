@@ -1,8 +1,5 @@
-import { Link } from "react-router-dom";
-import "./Header.scss";
-
 const Header = () => {
-  return <></>;
+  return <>Header</>;
 };
 
 export default Header;
