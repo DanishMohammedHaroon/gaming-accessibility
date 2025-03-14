@@ -1,9 +1,15 @@
 import "./HomePage.scss";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function HomePage({}) {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+
   return (
     <>
-<<<<<<< HEAD
       <div className="homepage">
         <nav className="nav">
           <div className="nav__profile">
@@ -119,10 +125,6 @@ export default function HomePage({}) {
           ></img>
           <img className="options__img" src="src\assets\images\pro.png"></img>
         </section>
-=======
-      <div>
-        <h3 className="homepage__title">Team Misfit- HomePage</h3>
->>>>>>> bd8ccca9bdca9167fe3750334693b9996dd459da
       </div>
     </>
   );
