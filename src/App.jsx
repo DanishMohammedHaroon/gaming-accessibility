@@ -24,7 +24,6 @@ function App() {
           <Route path="/cognitive" element={<CognitivePage />} />
           <Route path="/general" element={<GeneralPage />} />
           <Route path="/vision" element={<VisionPage />} />
-          <Route path="/general" element={<GeneralPage />} />
           <Route path="/speech" element={<SpeechPage />} />
         </Routes>
       </main>
