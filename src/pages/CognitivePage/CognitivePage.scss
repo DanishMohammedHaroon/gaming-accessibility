@@ -4,7 +4,6 @@
     display: block;
     width: 100%;
     align-items: center;
-    
   }
 
   &__background-image {
@@ -45,10 +44,10 @@
 
 .overlaycognitive {
   position: absolute;
-  top:240px;
+  top: 240px;
   left: 500px;
-  width: 80%;
-  height: 80%;
+  width: 50%;
+  height: 50%;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
