@@ -1,15 +1,20 @@
 @font-face {
-    font-family: "OpenDyslexic";
-    src:url(/fonts/OpenDyslexic-Regular.woff2) format("woff2"),
+  font-family: "OpenDyslexic";
+  src: url(/fonts/OpenDyslexic-Regular.woff2) format("woff2"),
     url(/public/fonts/OpenDyslexic-Regular.woff) format("woff");
-};
+}
 @font-face {
-    font-family: "OpenDyslexic";
-    src:url(/public/fonts/OpenDyslexic-Bold.woff2) format("woff2"), 
-    url(/public/fonts/OpenDyslexic-Bold.woff) format("woff"); 
-};
+  font-family: "OpenDyslexic";
+  src: url(/public/fonts/OpenDyslexic-Bold.woff2) format("woff2"),
+    url(/public/fonts/OpenDyslexic-Bold.woff) format("woff");
+}
 @font-face {
-    font-family: "OpenDyslexic";
-    src:url(/public/fonts/OpenDyslexic-Italic.woff2) format("woff2"),
-    url(/public/fonts/OpenDyslexic-Italic.woff) format("woff"); 
-};
+  font-family: "OpenDyslexic";
+  src: url(/public/fonts/OpenDyslexic-Italic.woff2) format("woff2"),
+    url(/public/fonts/OpenDyslexic-Italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: "HeadlinerNo45";
+  src: url("../../assets/font/HeadlinerNo45.ttf") format("truetype");
+}

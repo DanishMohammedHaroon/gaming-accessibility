@@ -6,8 +6,8 @@ export default function CognitivePage() {
   const [showAfterAI, setShowAfterAI] = useState(false);
 
   const beforeAIText =
-    "Time anomalies are wreaking havoc in Sector Gamma-9 due to 'The Nexus' artifact. Researchers are experiencing strange aging and memory issues, while local creatures have turned aggressive. Emergency evacuation is underway.";
-  const afterAIText = " Time is breaking. Creatures are attacking. Get out now.";
+    "Time anomalies are wreaking havoc in Sector Gamma 9 due to 'The Nexus' artifact.\nResearchers are experiencing strange aging and memory issues,\nwhile local creatures have turned aggressive.\nEmergency evacuation is underway.";
+  const afterAIText = "Time is breaking. Creatures are attacking.\nGet out now.";
 
   const toggleText = () => {
     setShowAfterAI(!showAfterAI);
