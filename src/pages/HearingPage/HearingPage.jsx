@@ -1,14 +1,14 @@
 import "./HearingPage.scss";
-import windowsLogo from "/images-logos/windows.svg";
-import xboxLogo from "/images-logos/xbox.svg";
-// import speakerIcon from "./images-logos/speaker.png";
-// import audio from "../../../public/audio/test_audio.mp3"
+import windowsLogo from "../../assets/images-logos/windows.svg";
+import xboxLogo from "../../assets/images-logos/xbox.svg";
+import speakerIcon from "../../assets/images-logos/speaker.png";
+import audio from "../../assets/audio/test_audio.mp3"
 import React, { useState, useRef } from "react";
 
 function HearingPage() {
   const [showText, setShowText] = useState(false);
   const audioRef = useRef(null);
-  const audioFilePath = "../../../public/audio/test_audio.mp3"; // Ensure this file exists in the public folder
+  const audioFilePath = "src/audio/test_audio.mp3";
 
   const playAudio = () => {
     if (audioRef.current) {
