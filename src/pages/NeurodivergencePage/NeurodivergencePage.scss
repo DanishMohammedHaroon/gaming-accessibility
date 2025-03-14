@@ -1,4 +1,7 @@
 
+@use "../../styles/partials/mixins" as*;
+@use "../../styles/partials/typography" as*;
+
 .neuro{
   &__page {  
   min-height: 100vh;
@@ -11,12 +14,21 @@
     align-items: center;
     justify-content: flex-end;
     padding-inline: 2rem;
+    @include tablet{
+    justify-content: flex-end;  
+    }
     }
     &__windows{
     width:50px;
+    @include tablet{
+
+    }
     }
     &__xbox{
     width:50px;
+    @include tablet{
+        
+    }
     }
     &__images{
     display:flex;
