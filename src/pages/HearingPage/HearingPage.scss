@@ -3,7 +3,7 @@
 @use "../../styles/partials/global";
 
 .hearing {
-    background-image: url('../../../public/images_logos/back.jpg');
+    background-image: url('../../../public/images-logos/hearing-back.jpg');
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -36,16 +36,24 @@
 }
 
 .hearing__content {
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 700px;
     width: 900px;
-    background-image: url('../../../public/images_logos/fortnite.png');
+    background-image: url('../../../public/images-logos/fortnite.png');
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     flex-direction: column;
+}
+
+.hearing__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3.125rem;
 }
 
 .hearing__overlay {
@@ -62,10 +70,10 @@
 
 .hearing__button {
     padding: 10px 20px;
-    background: #00AEEF;
+    background: #77bb44;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
     transition: 0.3s;
@@ -73,4 +81,12 @@
 
 .hearing__button:hover {
     background: #008CBA;
+}
+
+.hearing__text {
+    margin: 16px 1rem;
+    padding-left: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
 }
