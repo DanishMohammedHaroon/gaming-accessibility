@@ -8,7 +8,6 @@ import VisionPage from "./pages/VisionPage/VisionPage";
 import GeneralPage from "./pages/GeneralPage/GeneralPage";
 import NeuroDivergencePage from "./pages/NeurodivergencePage/NeurodivergencePage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import CognitivePage from "./pages/CognitivePage/CognitivePage";
 
 function App() {
   return (
