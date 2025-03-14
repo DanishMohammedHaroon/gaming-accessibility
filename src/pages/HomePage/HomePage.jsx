@@ -29,6 +29,33 @@ export default function HomePage({}) {
               </div>
             </div>
           </div>
+
+          {/* floating drawer menu */}
+          {isDrawerOpen && (
+            <div className="drawer">
+              <ul className="drawer__list">
+                <Link to="/cognitive" className="drawer__item">
+                  Motor
+                </Link>
+                <Link to="/cognitive" className="drawer__item">
+                  Cognitive
+                </Link>
+                <Link to="/cognitive" className="drawer__item">
+                  Vision
+                </Link>
+                <Link to="/cognitive" className="drawer__item">
+                  Hearing
+                </Link>
+                <Link to="/cognitive" className="drawer__item">
+                  Speech
+                </Link>
+                <Link to="/cognitive" className="drawer__item">
+                  Neurodivergent
+                </Link>
+              </ul>
+            </div>
+          )}
+
           <div className="nav__list">
             <img className="nav__item" src="src\assets\icons\library.png"></img>
             <img className="nav__item" src="src\assets\icons\shop.png"></img>
@@ -54,32 +81,6 @@ export default function HomePage({}) {
             <h3 className="nav__time">04:55 pm</h3>
           </div>
         </nav>
-
-        {/* floating drawer menu */}
-        {isDrawerOpen && (
-          <div className="drawer">
-            <ul className="drawer__list">
-              <Link to="/cognitive" className="drawer__item">
-                Cognitive
-              </Link>
-              <Link to="/cognitive" className="drawer__item">
-                Cognitive
-              </Link>
-              <Link to="/cognitive" className="drawer__item">
-                Cognitive
-              </Link>
-              <Link to="/cognitive" className="drawer__item">
-                Cognitive
-              </Link>
-              <Link to="/cognitive" className="drawer__item">
-                Cognitive
-              </Link>
-              <Link to="/cognitive" className="drawer__item">
-                Cognitive
-              </Link>
-            </ul>
-          </div>
-        )}
 
         <section className="games">
           <img
