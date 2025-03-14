@@ -16,7 +16,6 @@ function App() {
       <main className="main">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          {/* temporary route */}
           <Route path="/motor" element={<MotorPage />} />
           <Route path="/vision" element={<VisionPage />} />
           <Route path="/neuro" element={<NeuroDivergencePage />} />
