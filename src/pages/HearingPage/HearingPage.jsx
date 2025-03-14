@@ -1,8 +1,8 @@
 import "./HearingPage.scss";
 // import Hearing from "../../components/Hearing/Hearing";
-import windows from "../../../public/images & logos/windows_logo.svg";
-import xbox from "../../../public/images & logos/xbox.svg";
-import speaker from "../../../public/images & logos/speaker.jpg"
+import windows from "../../../public/images_logos/windows_logo.svg";
+import xbox from "../../../public/images_logos/xbox.svg";
+import speaker from "../../../public/images_logos/speaker.jpg"
 
 function HearingPage(){
     return(

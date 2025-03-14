@@ -3,5 +3,8 @@
 @use "../../styles/partials/global";    
 
 .hearing {
-    background-image: url("../../../public/images\ &\ logos/background.png");
+    background-image: url("../../../public/images_logos/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
