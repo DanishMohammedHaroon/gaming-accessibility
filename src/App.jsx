@@ -12,7 +12,8 @@ function App() {
       <Header />
       <main className="main">
         <Routes>
-          <Route path="/" element={<CognitivePage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/cognitive" element={<CognitivePage />} />
         </Routes>
       </main>
       <Footer />

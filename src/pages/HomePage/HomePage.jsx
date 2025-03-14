@@ -6,7 +6,6 @@ export default function HomePage({}) {
     <>
       <div>
         <h3 className="homepage__title">Team Misfit- HomePage</h3>
-        <CognitivePage />
       </div>
     </>
   );
