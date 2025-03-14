@@ -39,31 +39,35 @@
   }
 }
 
-.overlay {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  height: 80%;
-  background-color: rgba(0, 0, 0, 0.7);
+.overlaygeneral {
+position: absolute;
+top: 10%;
+left: 10%;
+width: 80%;
+height: 80%;
+background-color: rgba(0, 0, 0, 0.7);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1001;
+border-radius: 10px;
+padding: 10px;
+
+&-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  text-align: center;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   z-index: 1001;
   border-radius: 10px;
   padding: 10px;
-
-  &-content {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 90%;
-    text-align: center;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+}
 }
 
 .button {

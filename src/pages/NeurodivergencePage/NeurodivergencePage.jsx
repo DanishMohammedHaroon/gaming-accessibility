@@ -21,8 +21,8 @@ export default function NeuroDivergencePage() {
           src={Neuro}
           alt="Starfield Into The Starfield Wallpaper"
         />
-        <div className="overlay">
-          <div className="overlay-content">
+        <div className="overlayneuro">
+          <div className="overlayneuro-content">
             <p
               className={
                 showAfterAI ? "neuro__narrative--after" : "neuro__narrative"

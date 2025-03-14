@@ -2,93 +2,95 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/global";
 
+.wrapper {
+  background-image: url("../../assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .hearing {
-    background-image: url('../../assets/images/background.png');
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  height: 100vh;
+  width: 100%;
+  padding-top: 3.125rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .hearing__icons {
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    display: flex;
-    gap: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .hearing__windows,
 .hearing__xbox {
-    width: 200px;
-    opacity: 0.7;
+  width: 200px;
+  opacity: 0.7;
 }
 
-.hearing__windows{
-    position: relative;
-    right: -8.125rem;
+.hearing__windows {
+  position: relative;
+  right: -8.125rem;
 }
 
 .hearing__content {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    height: 700px;
-    width: 900px;
-    background-image: url('../../assets/images/fortnite.png');
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 700px;
+  width: 900px;
+  background-image: url("../../assets/images/fortnite.png");
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
 }
 
-.hearing__container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.hearing__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .hearing__overlay {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 700px;
-    width: 300px;
-    background-color: #010735;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: 300px;
+  background-color: #010735;
 }
 
 .hearing__speaker {
-    width: 80px;
-    margin-bottom: 1rem;
-    background-color: gray;
+  width: 80px;
+  margin-bottom: 1rem;
+  background-color: gray;
 }
 
 .hearing__button {
-    padding: 10px 20px;
-    background: #77bb44;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
+  padding: 10px 20px;
+  background: #77bb44;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
 .hearing__button:hover {
-    background: #008CBA;
+  background: #008cba;
 }
 
 .hearing__text {
-    margin: 16px 1rem;
-    padding-left: 3rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
+  margin: 16px 1rem;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
 }
