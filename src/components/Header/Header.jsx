@@ -1,4 +1,4 @@
-import { Link } from "react";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./Header.scss";
 
@@ -11,22 +11,24 @@ const Header = () => {
   return (
     <>
       <nav className="nav">
-        <div className="nav__profile">
-          <img className="nav__avatar" src="src\assets\icons\group.png"></img>
-          <div className="nav__profile-details">
-            <div className="nav__user">
-              <h1 className="nav__name">Team Misfits</h1>
-              <h5 className="nav__subscription">ULTIMATE</h5>
-            </div>
-            <div className="nav__achievements">
-              <img
-                className="nav__icon"
-                src="src\assets\icons\gamerscore.png"
-              ></img>
-              <p className="nav__score">21,337</p>
+        <Link className="nav__linkhome" to="/">
+          <div className="nav__profile">
+            <img className="nav__avatar" src="src\assets\icons\group.png"></img>
+            <div className="nav__profile-details">
+              <div className="nav__user">
+                <h1 className="nav__name">Team Misfits</h1>
+                <h5 className="nav__subscription">ULTIMATE</h5>
+              </div>
+              <div className="nav__achievements">
+                <img
+                  className="nav__icon"
+                  src="src\assets\icons\gamerscore.png"
+                ></img>
+                <p className="nav__score">21,337</p>
+              </div>
             </div>
           </div>
-        </div>
+        </Link>
 
         {/* floating drawer menu */}
         {isDrawerOpen && (
