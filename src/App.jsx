@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/HomePage/HomePage";
 import MotorPage from "./pages/MotorPage/MotorPage";
 import VisionPage from "./pages/VisionPage/VisionPage";
+import GeneralPage from "./pages/GeneralPage/GeneralPage";
 import NeuroDivergencePage from "./pages/NeurodivergencePage/NeurodivergencePage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CognitivePage from "./pages/CognitivePage/CognitivePage";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/vision" element={<VisionPage />} />
           <Route path="/neuro" element={<NeuroDivergencePage />} />
           <Route path="/cognitive" element={<CognitivePage />} />
+          <Route path="/general" element={<GeneralPage />} />
         </Routes>
       </main>
       <Footer />

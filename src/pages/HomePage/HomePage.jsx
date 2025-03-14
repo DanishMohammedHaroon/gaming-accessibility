@@ -52,6 +52,9 @@ export default function HomePage({}) {
                 <Link to="/neuro" className="drawer__item">
                   Neurodivergent
                 </Link>
+                <Link to="/general" className="drawer__item">
+                  General
+                </Link>
               </ul>
             </div>
           )}
