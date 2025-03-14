@@ -23,6 +23,8 @@ function HearingPage() {
   };
 
   return (
+    <>
+    <Header />
     <section className="hearing">
       <div className="hearing__container">
         <div className="hearing__overlay">
@@ -44,6 +46,7 @@ function HearingPage() {
       </div>
       <audio ref={audioRef} src={audioFile} />
     </section>
+    </>
   );
 }
 
