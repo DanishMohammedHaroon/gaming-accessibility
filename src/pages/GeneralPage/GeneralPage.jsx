@@ -5,7 +5,7 @@ import imageEdit from "../../assets/images-logos/Starfield-Review-Featured-Games
 import Softner from "../../components/Softner/Softner";
 import Daltonization from "../../components/Daltonization/Daltonization";
 import BlueLightFilter from "../../components/BlueLightFilter/BlueLightFilter";
-
+import Header from "../../components/Header/Header";
 
 export default function EffectsPage() {
   // State for toggling effects
@@ -17,7 +17,6 @@ export default function EffectsPage() {
   const toggleSoft = () => setIsSoft((prev) => !prev);
   const toggleColorblind = () => setIsColorblind((prev) => !prev);
   const toggleBlueFilter = () => setIsBlueFilter((prev) => !prev);
-
 
   let imageElement = (
     <img className="general__normal" src={imageEdit} alt="general image" />
@@ -46,36 +45,39 @@ export default function EffectsPage() {
   }
 
   return (
-    <div className="general__container">
+    <>
+      <Header />
       <div className="general__container">
-        <img
-          className="general__background"
-          src={StarField}
-          alt="Starfield Wallpaper"
-        />
-      </div>
-      <div className="overlay">
-        <div className="overlay__content">
-          {/* Render the filtered image */}
-          <div>{imageElement}</div>
-          {/* Control buttons */}
-          <div className="button-group">
-            <button onClick={toggleSoft}>
-              {isSoft ? "Disable Soft Effect" : "Enable Soft Effect"}
-            </button>
-            <button onClick={toggleColorblind}>
-              {isColorblind
-                ? "Disable Colorblind Compensation"
-                : "Enable Colorblind Compensation"}
-            </button>
-            <button onClick={toggleBlueFilter}>
-              {isBlueFilter
-                ? "Disable Blue Light Filter"
-                : "Enable Blue Light Filter"}
-            </button>
+        <div className="general__container">
+          <img
+            className="general__background"
+            src={StarField}
+            alt="Starfield Wallpaper"
+          />
+        </div>
+        <div className="overlay">
+          <div className="overlay__content">
+            {/* Render the filtered image */}
+            <div>{imageElement}</div>
+            {/* Control buttons */}
+            <div className="button-group">
+              <button onClick={toggleSoft}>
+                {isSoft ? "Disable Soft Effect" : "Enable Soft Effect"}
+              </button>
+              <button onClick={toggleColorblind}>
+                {isColorblind
+                  ? "Disable Colorblind Compensation"
+                  : "Enable Colorblind Compensation"}
+              </button>
+              <button onClick={toggleBlueFilter}>
+                {isBlueFilter
+                  ? "Disable Blue Light Filter"
+                  : "Enable Blue Light Filter"}
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

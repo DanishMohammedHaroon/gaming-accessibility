@@ -11,7 +11,6 @@ import CognitivePage from "./pages/CognitivePage/CognitivePage";
 import NeuroDivergencePage from "./pages/NeurodivergencePage/NeurodivergencePage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -24,10 +23,9 @@ function App() {
           <Route path="/cognitive" element={<CognitivePage />} />
           <Route path="/general" element={<GeneralPage />} />
           <Route path="/vision" element={<VisionPage />} />
-          <Route path="/general" element={<GeneralPage />} />  
+          <Route path="/general" element={<GeneralPage />} />
         </Routes>
       </main>
-
     </BrowserRouter>
   );
 }
