@@ -10,7 +10,7 @@
     border: 1px solid blueviolet;
   }
 
-  h1 {
+  .speech__title {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
@@ -75,12 +75,12 @@
   margin: 5rem 2rem;
 }
 
-.overlay {
+.speechoverlay {
   position: absolute;
-  top: 240px;
-  left: 720px;
-  width: 44.5%;
-  height: 47%;
+  top: 27rem;
+  left: 75rem;
+  width: 40rem;
+  height: 23rem;
   background: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
@@ -88,7 +88,7 @@
   border-radius: 21px;
 }
 
-.overlay-text {
+.speechoverlay-text {
   color: white;
   font-size: 20px;
   font-weight: bold;
@@ -117,8 +117,8 @@
 
 .text-overlay {
   position: absolute;
-  bottom: 63%;
-  left: 64%;
+  bottom: 20rem;
+  left: 95rem;
   transform: translateX(-50%);
   background: rgba(246, 214, 254, 0.8);
   padding: 10px 12px;
@@ -134,25 +134,25 @@
 
 .reload-overlay {
   position: absolute;
-  top: 38%;
-  left: 26.6%;
+  top: 40rem;
+  left: 55rem;
   transform: translate(-20%, -20%);
   background: rgba(173, 144, 255, 0.8);
-  padding: 40px 50px;
+  padding: 1rem 3rem;
   border-radius: 10px;
   color: white;
   font-size: 22px;
   font-weight: bold;
   text-align: center;
-  width: 44.5%;
+  width: 20rem;
   opacity: 0;
   animation: fadeIn 0.5s ease-in forwards, fadeOut 0.5s ease-out 2.5s forwards;
 }
 
 .additional-overlay {
   position: absolute;
-  top: 35%;
-  left: 40%;
+  bottom: 24rem;
+  left: 95rem;
   transform: translate(-50%, -50%);
   padding: 10px 20px;
   background-color: rgba(0, 0, 0, 0.75);
