@@ -11,20 +11,18 @@ function NeuroDivergencePage() {
         <XboxLogo className="neuro__windows" />
       </div>
 
-      <div className="image-section">
-        <div className="image-wrapper">
-          <img src="/minecraft1.png" alt="Minecraft normal text" />
-          <p className="description">
-            This is <strong>normal text</strong>.
-          </p>
+      <div className="neuro__images">
+        <div className="neuro__wrapper-normal">
+          <img
+            src="/public/images-logos/minecraft.svg"
+            alt="Minecraft normal text"
+          />
         </div>
-
-        <div className="image-wrapper">
-          <img src="/minecraft2.png" alt="Minecraft text for neurodivergent" />
-          <p className="description alt-font">
-            This is also normal text, <br />
-            but it’s more readable by neurodivergent users.
-          </p>
+        <div className="neuro__wrapper-dyslexic">
+          <img
+            src="/public/images-logos/minecrafdyslexic.svg"
+            alt="Minecraft text for neurodivergent"
+          />
         </div>
       </div>
     </div>
