@@ -12,9 +12,7 @@
   }
   &__narrative {
     margin-top: 20px;
-  }
-  &__narrative--hidden {
-    display: none;
+    white-space: pre-wrap;
   }
 }
 
@@ -40,14 +38,6 @@
     text-align: center;
     color: black;
   }
-}
-
-.cognitive__narrative {
-  margin-top: 20px;
-}
-
-.cognitive__narrative--hidden {
-  display: none;
 }
 
 button {
