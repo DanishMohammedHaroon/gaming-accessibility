@@ -1,22 +1,23 @@
 import "./HearingPage.scss";
-// import Hearing from "../../components/Hearing/Hearing";
-import windows from "../../../public/images_logos/windows_logo.svg";
-import xbox from "../../../public/images_logos/xbox.svg";
-import speaker from "../../../public/images_logos/speaker.jpg"
+import windowsLogo from "../../../public/images-logos/windows.svg";
+import xboxLogo from "../../../public/images-logos/xbox.svg";
+import speakerIcon from "../../../public/images_logos/speaker.jpg";
 
-function HearingPage(){
-    return(
-        <section className="hearing">
-            <div className="hearing__icons">
-                <img src={windows} alt="Windows Logo" />
-                <img src={xbox} alt="Xbox logo" />
-            </div>
-            <div className="hearing__img-1">
-                <img src={speaker} alt="Speaker Icon" />
-                <button>Click to Transcribe</button>
-            </div> 
-        </section>
-    );
+function HearingPage() {
+  return (
+    <section className="hearing">
+      <div className="hearing__icons">
+        <img className="hearing__windows" src={windowsLogo} alt="Windows Logo" />
+        <img className="hearing__xbox" src={xboxLogo} alt="Xbox Logo" />
+      </div>
+      <div className="hearing__content">
+        <div className="hearing__overlay">
+          <img className="hearing__speaker" src={speakerIcon} alt="Speaker Icon" />
+          <button className="hearing__button">Click to Transcribe</button>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default HearingPage;

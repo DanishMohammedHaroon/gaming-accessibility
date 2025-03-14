@@ -12,7 +12,7 @@ import HearingPage from "./pages/HearingPage/HearingPage";
 function App() {
   return (
     <BrowserRouter>
-      <Header />
+      {/* <Header /> */}
       <main className="main">
         <Routes>
           {/* <Route path="/" element={<HomePage />} /> */}
@@ -23,7 +23,7 @@ function App() {
           <Route path="/" element={<HearingPage />} />
         </Routes>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }
