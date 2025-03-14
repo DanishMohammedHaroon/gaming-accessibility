@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/HomePage/HomePage";
 import MotorPage from "./pages/MotorPage/MotorPage";
+import VisionPage from "./pages/VisionPage/VisionPage";
 import NeuroDivergencePage from "./pages/NeurodivergencePage/NeurodivergencePage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CognitivePage from "./pages/CognitivePage/CognitivePage";
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           {/* temporary route */}
           <Route path="/motor" element={<MotorPage />} />
+          <Route path="/vision" element={<VisionPage />} />
           <Route path="/neuro" element={<NeuroDivergencePage />} />
           <Route path="/cognitive" element={<CognitivePage />} />
         </Routes>

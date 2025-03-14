@@ -1,18 +1,15 @@
 @font-face {
     font-family: "OpenDyslexic";
-    src:url(/public/fonts/OpenDyslexic-Regular.woff2) format("woff2"),
+    src:url(/fonts/OpenDyslexic-Regular.woff2) format("woff2"),
     url(/public/fonts/OpenDyslexic-Regular.woff) format("woff");
-    font-weight:300;
 };
 @font-face {
     font-family: "OpenDyslexic";
     src:url(/public/fonts/OpenDyslexic-Bold.woff2) format("woff2"), 
     url(/public/fonts/OpenDyslexic-Bold.woff) format("woff"); 
-    font-weight:300;
 };
 @font-face {
     font-family: "OpenDyslexic";
-    src:url(/public/fonts/) format("woff2"),
-    url(/src/assets/fonts/Newsreader-Regular.woff) format("woff"); 
-    font-weight:400;
+    src:url(/public/fonts/OpenDyslexic-Italic.woff2) format("woff2"),
+    url(/public/fonts/OpenDyslexic-Italic.woff) format("woff"); 
 };

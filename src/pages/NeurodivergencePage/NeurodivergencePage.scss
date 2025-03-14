@@ -1,44 +1,71 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
 
-@use "../../styles/partials/mixins" as*;
-@use "../../styles/partials/typography" as*;
 
-.neuro{
-  &__page {  
-  min-height: 100vh;
-  color: #fff;
-  background: url("/images-logos/maxresdefault.jpg") no-repeat center center;
-  background-size: cover;
-  }
-    &__logos {
-    display: flex;
+.neuro {
+  &__container {
+    position: relative;
+    display: block;
+    width: 100%;
     align-items: center;
-    justify-content: flex-end;
-    padding-inline: 2rem;
-    @include tablet{
-    justify-content: flex-end;  
+  }
+  &__background-image {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  &__narrative {
+    margin-top: 20px;
+  }
+   &__narrative--after {
+    margin-top: 20px;
+  }
+  &__normal{
+    width:150px;
+    height: auto;
+    @include tablet {
+      width:350px;
     }
+    @include desktop{
+    width:800px;
     }
-    &__windows{
-    width:50px;
-    @include tablet{
+  }
+}
 
-    }
-    }
-    &__xbox{
-    width:50px;
-    @include tablet{
-        
-    }
-    }
-    &__images{
-    display:flex;
-    flex-direction: column;
-    padding-inline:3.25rem;
-    }
-    &__wrapper-normal{
-    width:31.25rem;
-    }
-    &__wrapper-dyslexic{
-    width:31.25rem;
-    }
+.overlay {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+  border-radius: 10px;
+  padding: 10px;
+
+  &-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    text-align: center;
+    color: black;
+  }
+}
+
+button {
+  margin: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0056b3;
+  }
 }

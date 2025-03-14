@@ -34,13 +34,13 @@ export default function HomePage({}) {
           {isDrawerOpen && (
             <div className="drawer">
               <ul className="drawer__list">
-                <Link to="/cognitive" className="drawer__item">
+                <Link to="/motor" className="drawer__item">
                   Motor
                 </Link>
                 <Link to="/cognitive" className="drawer__item">
                   Cognitive
                 </Link>
-                <Link to="/cognitive" className="drawer__item">
+                <Link to="/vision" className="drawer__item">
                   Vision
                 </Link>
                 <Link to="/cognitive" className="drawer__item">
@@ -49,7 +49,7 @@ export default function HomePage({}) {
                 <Link to="/cognitive" className="drawer__item">
                   Speech
                 </Link>
-                <Link to="/cognitive" className="drawer__item">
+                <Link to="/neuro" className="drawer__item">
                   Neurodivergent
                 </Link>
               </ul>
