@@ -18,7 +18,6 @@ function App() {
           <Route path="/cognitive" element={<CognitivePage />} />
         </Routes>
       </main>
-      <Footer />
     </BrowserRouter>
   );
 }

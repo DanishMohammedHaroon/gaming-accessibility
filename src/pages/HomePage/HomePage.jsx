@@ -78,7 +78,7 @@ export default function HomePage({}) {
               className="nav__battery"
               src="src\assets\icons\battery.png"
             ></img>
-            <h3 className="nav__time">04:55 pm</h3>
+            <h3 className="nav__time">02:15 pm</h3>
           </div>
         </nav>
 
