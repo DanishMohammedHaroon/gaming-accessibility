@@ -1,7 +1,6 @@
 import "./App.scss";
 import "./styles/partials/_global.scss";
 import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/HomePage/HomePage";
 import MotorPage from "./pages/MotorPage/MotorPage";
 import VisionPage from "./pages/VisionPage/VisionPage";
