@@ -1,15 +1,27 @@
-.cognitive__before-image {
-  position: relative;
-  display: block;
-  width: 100%;
-  max-width: 90rem;
-  margin: 1.25rem auto;
+.cognitive {
+  &__container {
+    position: relative;
+    display: block;
+    width: 100%;
+    align-items: center;
+  }
+  &__background-image {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  &__narrative {
+    margin-top: 20px;
+  }
+  &__narrative--hidden {
+    display: none;
+  }
 }
 
 .overlay {
   position: absolute;
-  top: 4rem;
-  left: 4rem;
+  top: 10%;
+  left: 10%;
   width: 80%;
   height: 80%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -19,16 +31,15 @@
   z-index: 1001;
   border-radius: 10px;
   padding: 10px;
-  max-width: 40rem;
-}
 
-.overlay-content {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 90%;
-  text-align: center;
-  color: black;
+  &-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    text-align: center;
+    color: black;
+  }
 }
 
 .cognitive__narrative {

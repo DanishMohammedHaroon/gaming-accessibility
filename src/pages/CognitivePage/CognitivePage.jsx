@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./CognitivePage.scss";
-import cognitive1 from "../../../public/Starfield_IntoTheStarfield_Wallpaper_2560x1440_01.webp";
+import cognitive1 from "../../../src/assets/images/Starfield3.webp";
 
 export default function CognitivePage() {
   const [showAfterAI, setShowAfterAI] = useState(false);
@@ -11,10 +11,8 @@ export default function CognitivePage() {
 
   return (
     <>
-      <h2>This is the Cognitive Page</h2>
-      <div className="cognitive__before-image">
-        <img src={cognitive1} alt="Starfield Into The Starfield Wallpaper" />
-
+      <div className="cognitive__container">
+        <img className="cognitive__background-image" src={cognitive1} alt="Starfield Into The Starfield Wallpaper" />
         <div className="overlay">
           <div className="overlay-content">
             <p className={showAfterAI ? "cognitve__narrative--after" : "cognitive__narrative"}>
