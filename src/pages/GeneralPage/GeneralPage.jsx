@@ -1,7 +1,7 @@
 import "./GeneralPage.scss";
 import React, { useState } from "react";
-import StarField from "/images-logos/HD-wallpaper-starfield.jpg"; // Background image
-import imageEdit from "/images-logos/Starfield-Review-Featured-Games.webp"; // Base image to be filtered
+import StarField from "/src/images-logos/HD-wallpaper-starfield.jpg"; // Background image
+import imageEdit from "/src/images-logos/Starfield-Review-Featured-Games.webp"; // Base image to be filtered
 import Softner from "../../components/Softner/Softner";
 import Daltonization from "../../components/Daltonization/Daltonization"; 
 import BlueLightFilter from "../../components/BlueLightFilter/BlueLightFilter";
