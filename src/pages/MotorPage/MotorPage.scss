@@ -1,0 +1,189 @@
+.motor-background {
+  &-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.motor-section-wrapper {
+  display: flex;
+  z-index: 50;
+  padding: 20px;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  justify-content: center;
+}
+
+.device-detection {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000e0;
+  padding: 3rem;
+  max-width: 25rem;
+  max-height: 59rem;
+  border-radius: 5px;
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+}
+
+.device-buttons,
+.connected-devices,
+.sensitivity-control {
+  width: 100%;
+}
+
+.device-buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+
+  &__title {
+    font-weight: 500;
+    margin-top: 1rem;
+    min-width: 150px;
+  }
+}
+
+.connected-devices {
+  &__title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    font-weight: 500;
+    margin-top: 1rem;
+    min-width: 150px;
+  }
+}
+
+.connected__title {
+  font-weight: 500;
+  margin-top: 1rem;
+  min-width: 150px;
+  color: #77bb44;
+}
+
+.devices-container {
+  margin-top: 2rem;
+}
+
+.sensitivity-control {
+  &__title {
+    margin-top: 3rem;
+    font-size: 1.4rem;
+  }
+
+  &__info {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 1.8rem;
+  }
+
+  &__stat {
+    margin-top: 1rem;
+  }
+
+  &__num {
+    color: #2ca243;
+  }
+}
+
+// MUI Slider
+.MuiSlider-root {
+  color: #77bb44 !important;
+  margin-top: 1rem !important;
+}
+
+// Button style overrides
+.css-w4gp61-MuiButtonBase-root-MuiToggleButton-root {
+  background: #77bb44 !important;
+  width: auto !important;
+  min-width: 110px !important;
+  padding: 0.4rem 1rem !important;
+  border-radius: 50px !important;
+  font-size: 0.8rem !important;
+  text-transform: inherit !important;
+  color: rgb(44, 44, 44) !important;
+  margin-top: 1rem !important;
+  margin-left: 1rem !important;
+  font-weight: 500 !important;
+  border: none !important;
+  transition: all 0.3s ease-out !important;
+  font-family: "Montserrat", sans-serif !important;
+
+  &:hover {
+    background: #107c10 !important;
+  }
+
+  &.Mui-selected {
+    color: #c3fffc !important;
+  }
+}
+
+.calibrate {
+  background: #77bb44;
+  width: auto;
+  min-width: 110px;
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  text-transform: inherit;
+  color: rgb(44, 44, 44);
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s ease-out;
+  font-family: "Montserrat", sans-serif;
+
+  &:hover {
+    background: #107c10;
+    cursor: pointer;
+  }
+}
+
+.motor-gameplay {
+  &-images {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 2rem;
+  }
+
+  &-img {
+    width: 600px;
+    border-radius: 5px;
+
+    &-container {
+      width: 800px;
+      height: 450px;
+      overflow: hidden;
+      border-radius: 5px;
+      border: 3px solid #2ca243;
+    }
+
+    &--zoomable {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

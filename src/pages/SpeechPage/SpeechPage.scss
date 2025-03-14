@@ -79,7 +79,7 @@ body {
 
 .overlay {
   position: absolute;
-  top: 200px;
+  top: 240px;
   left: 720px;
   width: 44.5%;
   height: 47%;
@@ -99,7 +99,7 @@ body {
 .voice__box {
   display: flex;
   position: fixed;
-  bottom: 87px;
+  bottom: 50px;
   left: 12%;
   transform: translateX(-50%);
   background-color: #9985ff;
@@ -119,8 +119,8 @@ body {
 
 .text-overlay {
   position: absolute;
-  bottom: 68%;
-  left: 63%;
+  bottom: 63%;
+  left: 64%;
   transform: translateX(-50%);
   background: rgba(246, 214, 254, 0.8);
   padding: 10px 12px;
@@ -136,7 +136,7 @@ body {
 
 .reload-overlay {
   position: absolute;
-  top: 30%;
+  top: 38%;
   left: 26.6%;
   transform: translate(-20%, -20%);
   background: rgba(173, 144, 255, 0.8);
