@@ -33,7 +33,10 @@ function HearingPage() {
             onClick={playAudio} 
             style={{ cursor: "pointer" }} 
           />
-          <button className="hearing__button" onClick={handleTranscription}>Click to Transcribe</button>
+          <button className="hearing__button" onClick={() => { handleTranscription(); playAudio(); }}>
+                Click to Transcribe
+            </button>
+
         </div>
         <div className="hearing__content">
           {showText && <p className="hearing__text">Hello everyone. This is just a test audio to see if the app works.</p>}
