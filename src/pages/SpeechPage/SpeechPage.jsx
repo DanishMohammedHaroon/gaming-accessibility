@@ -7,12 +7,22 @@ export default function SpeechPage({}) {
   const [overlayVisible, setOverlayVisible] = useState(true);
   const [voiceTextVisible, setVoiceTextVisible] = useState(false);
   const [reloadOverlayVisible, setReloadOverlayVisible] = useState(false);
+  const [additionalOverlayVisible, setAdditionalOverlayVisible] =
+    useState(false);
   const [displayedText, setDisplayedText] = useState("");
 
   const handleVoiceToTextClick = () => {
     setOverlayVisible(false);
     setVoiceTextVisible(true);
     setDisplayedText("");
+
+    setTimeout(() => {
+      setAdditionalOverlayVisible(true);
+
+      setTimeout(() => {
+        setAdditionalOverlayVisible(false);
+      }, 3000);
+    }, 10000);
 
     let index = 0;
     const text = "Player 1 says: Take cover, I can hear something’s coming!";
@@ -83,6 +93,12 @@ export default function SpeechPage({}) {
           {overlayVisible && (
             <div className="overlay">
               <p className="overlay-text">ENABLE</p>
+            </div>
+          )}
+
+          {additionalOverlayVisible && (
+            <div className="additional-overlay">
+              <p>Tip: Hold C to Cover!</p>
             </div>
           )}
         </div>
