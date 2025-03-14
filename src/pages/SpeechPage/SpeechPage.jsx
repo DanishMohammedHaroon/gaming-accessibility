@@ -56,8 +56,8 @@ export default function SpeechPage({}) {
 
   return (
     <>
-      <Header />
       <div className="speech">
+      <Header />
         <h1>Assistive Speech</h1>
         <div className="speech__settings">
           <div className="button__group">
@@ -98,8 +98,8 @@ export default function SpeechPage({}) {
             )}
 
             {overlayVisible && (
-              <div className="overlay">
-                <p className="overlay-text">ENABLE</p>
+              <div className="speechoverlay">
+                <p className="speechoverlay-text">ENABLE</p>
               </div>
             )}
 
