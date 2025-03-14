@@ -1,7 +1,7 @@
 import "./HearingPage.scss";
-import windowsLogo from "../../../public/images-logos/windows.svg";
-import xboxLogo from "../../../public/images-logos/xbox.svg";
-import speakerIcon from "../../../public/images-logos/speaker.png";
+import windowsLogo from "/images-logos/windows.svg";
+import xboxLogo from "/images-logos/xbox.svg";
+import speakerIcon from "./images-logos/speaker.png";
 // import audio from "../../../public/audio/test_audio.mp3"
 import React, { useState, useRef } from "react";
 
