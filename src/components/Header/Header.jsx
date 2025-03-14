@@ -1,11 +1,8 @@
+import { Link } from "react-router-dom";
+import "./Header.scss";
+
 const Header = () => {
-  return (
-    <>
-      <nav>
-        <h1>Title</h1>
-      </nav>
-    </>
-  );
+  return <></>;
 };
 
 export default Header;
