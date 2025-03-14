@@ -24,8 +24,8 @@ export default function CognitivePage() {
           src={cognitive1}
           alt="Starfield Into The Starfield Wallpaper"
         />
-        <div className="overlay">
-          <div className="overlay-content">
+        <div className="overlaycognitive">
+          <div className="overlaycognitive-content">
             <p
               className={`cognitive__narrative ${
                 showAfterAI ? "after-ai" : "before-ai"

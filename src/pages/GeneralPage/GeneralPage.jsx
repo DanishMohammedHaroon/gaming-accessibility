@@ -55,8 +55,8 @@ export default function EffectsPage() {
             alt="Starfield Wallpaper"
           />
         </div>
-        <div className="overlay">
-          <div className="overlay__content">
+        <div className="overlaygeneral">
+          <div className="overlaygeneral__content">
             {/* Render the filtered image */}
             <div>{imageElement}</div>
             {/* Control buttons */}
