@@ -1,7 +1,14 @@
 import CognitivePage from "../CognitivePage/CognitivePage";
 import "./HomePage.scss";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function HomePage({}) {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+
   return (
     <>
       <div className="homepage">
@@ -31,7 +38,12 @@ export default function HomePage({}) {
               className="nav__item"
               src="src\assets\icons\settings.png"
             ></img>
-            <img className="nav__item" src="src\assets\icons\copilot.png"></img>
+            <img
+              className="nav__item"
+              src="src\assets\icons\copilot.png"
+              onClick={toggleDrawer}
+              style={{ cursor: "pointer" }}
+            ></img>
           </div>
           <div className="nav__info">
             <img className="nav__mic" src="src\assets\icons\mute.png"></img>
@@ -42,6 +54,23 @@ export default function HomePage({}) {
             <h3 className="nav__time">04:55 pm</h3>
           </div>
         </nav>
+
+        {/* floating drawer menu */}
+        {isDrawerOpen && (
+          <div className="drawer">
+            <button className="drawer__close" onClick={toggleDrawer}>
+              ×
+            </button>
+            <ul>
+              <Link to={CognitivePage}>Cognitive</Link>
+              <Link to={CognitivePage}>Cognitive</Link>
+              <Link to={CognitivePage}>Cognitive</Link>
+              <Link to={CognitivePage}>Cognitive</Link>
+              <Link to={CognitivePage}>Cognitive</Link>
+              <Link to={CognitivePage}>Cognitive</Link>
+            </ul>
+          </div>
+        )}
 
         <section className="games">
           <img
@@ -61,7 +90,7 @@ export default function HomePage({}) {
           <img className="games__img" src="src\assets\images\forza.png"></img>
           <img
             className="games__img"
-            src="src\assets\images\maxresdefault.png"
+            src="src\assets\images\minecraft.png"
           ></img>
           <img className="games__img" src="src\assets\images\disney.png"></img>
           <img
