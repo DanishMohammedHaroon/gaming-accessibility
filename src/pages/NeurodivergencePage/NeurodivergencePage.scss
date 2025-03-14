@@ -5,7 +5,13 @@
   background-size: cover;
     &__logos {
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
+    }
+    &__window{
+width:20px;
+    }
+    &__xbox{
+width:20px;
     }
 }
 
