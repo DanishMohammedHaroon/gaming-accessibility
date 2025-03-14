@@ -2,13 +2,18 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/global";
 
-.hearing {
+.wrapper {
     background-image: url('../../assets/images/background.png');
-    height: 100vh;
-    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.hearing {
+    
+    height: 100vh;
+    width: 100%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
