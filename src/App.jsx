@@ -7,7 +7,7 @@ import MotorPage from "./pages/MotorPage/MotorPage";
 import GeneralPage from "./pages/GeneralPage/GeneralPage";
 import NeuroDivergencePage from "./pages/NeurodivergencePage/NeurodivergencePage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import CognitivePage from "./pages/CognitivePage/CognitivePage";
+// import CognitivePage from "./pages/CognitivePage/CognitivePage";
 import VisionPage from "./pages/VisionPage/VisionPage";
 
 function App() {
