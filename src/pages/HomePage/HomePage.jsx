@@ -1,3 +1,4 @@
+import CognitivePage from "../CognitivePage/CognitivePage";
 import "./HomePage.scss";
 import { Link } from "react-router-dom";
 import { useState } from "react";
