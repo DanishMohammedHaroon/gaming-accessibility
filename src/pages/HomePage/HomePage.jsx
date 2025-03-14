@@ -1,3 +1,4 @@
+import CognitivePage from "../CognitivePage/CognitivePage";
 import "./HomePage.scss";
 
 export default function HomePage({}) {
