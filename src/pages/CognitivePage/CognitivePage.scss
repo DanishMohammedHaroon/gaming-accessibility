@@ -5,14 +5,38 @@
     width: 100%;
     align-items: center;
   }
+
   &__background-image {
     position: relative;
     margin: 0 auto;
     max-width: 100%;
   }
+
   &__narrative {
     margin-top: 20px;
     white-space: pre-wrap;
+    overflow: hidden;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+    &.before-ai {
+      animation: typeText 2s steps(40, end) forwards;
+    }
+
+    &.after-ai {
+      animation: typeText 4s steps(40, end) forwards;
+    }
+  }
+}
+
+@keyframes typeText {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
   }
 }
 
