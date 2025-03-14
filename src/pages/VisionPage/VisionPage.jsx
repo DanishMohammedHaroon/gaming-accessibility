@@ -1,81 +1,105 @@
-import "./GeneralPage.scss";
 import React, { useState } from "react";
-import StarField from "/images-logos/HD-wallpaper-starfield.jpg"; // Background image
-import imageEdit from "/images-logos/Starfield-Review-Featured-Games.webp"; // Base image to be filtered
-import Softner from "../../components/Softner/Softner";
-import Daltonization from "../../components/Daltonization/Daltonization"; 
-import BlueLightFilter from "../../components/BlueLightFilter/BlueLightFilter";
+import "./VisionPage.scss";
+import VisionBackground from "../../assets/images/Starfield-Review-Featured-Games.webp";
+import beforeAIImage from "../../assets/images/Vision_BeforeAI.png";
+import afterAIImage from "../../assets/images/Vision_AfterAI.png";
+import beforeAIImage2 from "../../assets/images/Vision2_BeforeAI.jpeg";
+import afterAIImage2 from "../../assets/images/Vision2_AfterAI.jpeg";
 
-
-export default function EffectsPage() {
-  // State for toggling effects
-  const [isSoft, setIsSoft] = useState(false);
-  const [isColorblind, setIsColorblind] = useState(false);
-  const [isBlueFilter, setIsBlueFilter] = useState(false);
-
-  // Toggle handlers
-  const toggleSoft = () => setIsSoft((prev) => !prev);
-  const toggleColorblind = () => setIsColorblind((prev) => !prev);
-  const toggleBlueFilter = () => setIsBlueFilter((prev) => !prev);
-
-
-  let imageElement = (
-    <img className="general__normal" src={imageEdit} alt="general image" />
-  );
-  if (isSoft && !isColorblind) {
-    imageElement = (
-      <Softner
-        className="general__normal"
-        src={imageEdit}
-        alt="general image - soft"
-      />
-    );
-  } else if (isColorblind) {
-    imageElement = (
-      <Daltonization
-        className="general__normal"
-        src={imageEdit}
-        alt="general image - daltonized"
-      />
-    );
-  }
-
-  // Wrap with Blue Light Filter if toggled
-  if (isBlueFilter) {
-    imageElement = <BlueLightFilter>{imageElement}</BlueLightFilter>;
-  }
+export default function VisionPage() {
+  const [showAfterAI, setShowAfterAI] = useState(false);
+  const [showAnotherExample, setShowAnotherExample] = useState(false);
+  const [showSecondExample, setShowSecondExample] = useState(false);
 
   return (
-    <div className="general__container">
-      <div className="general__container">
+    <>
+      <div className="vision__container">
         <img
-          className="general__background"
-          src={StarField}
-          alt="Starfield Wallpaper"
+          className="vision__background-image"
+          src={VisionBackground}
+          alt="Starfield Into The Starfield Wallpaper"
         />
-      </div>
-      <div className="overlay">
-        <div className="overlay__content">
-          {/* Render the filtered image */}
-          <div>{imageElement}</div>
-          {/* Control buttons */}
-          <div className="button-group">
-            <button onClick={toggleSoft}>
-              {isSoft ? "Disable Soft Effect" : "Enable Soft Effect"}
+
+        <div className="vision__overlay">
+          <div className="vision__overlay-content">
+            {/* CONDITIONAL IMAGE */}
+            <img
+              className="vision__narrative-image"
+              src={showAfterAI ? afterAIImage : beforeAIImage}
+              alt={showAfterAI ? "After AI Image" : "Before AI Image"}
+            />
+
+            {/* TEXT */}
+            <p className={showAfterAI ? "vision__narrative--after" : "vision__narrative"}>
+              {showAfterAI
+                ? "Time is breaking. Creatures are attacking. Get out now."
+                : "Time anomalies are wreaking havoc in Sector Gamma-9 due to 'The Nexus' artifact. Researchers are experiencing strange aging and memory issues, while local creatures have turned aggressive. Emergency evacuation is underway."}
+            </p>
+
+            {/* INFO BOXES - Visible only after AI is shown */}
+            {showAfterAI && (
+              <div className="vision__info-boxes">
+                <div className="vision__info-box">
+                  <strong>Dynamic UI & Contrast Adjustments:</strong>
+                  <p>
+                    Using computer vision and user data, AI can adjust contrast, text size, and color schemes in real time to improve readability.
+                  </p>
+                </div>
+                <div className="vision__info-box">
+                  <strong>Automated Screen Reader Integration:</strong>
+                  <p>
+                    AI enhances screen reader functionalities by interpreting game interfaces and ensuring all essential information is read aloud.
+                  </p>
+                </div>
+                <div className="vision__info-box">
+                  <strong>Adaptive Field of View & Layouts:</strong>
+                  <p>
+                    AI optimizes UI layouts by detecting when important elements might be off-screen, automatically adjusting placements.
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {/* BUTTONS */}
+            <button onClick={() => setShowAfterAI(!showAfterAI)}>
+              {showAfterAI ? "Show Before AI" : "Show After AI"}
             </button>
-            <button onClick={toggleColorblind}>
-              {isColorblind
-                ? "Disable Colorblind Compensation"
-                : "Enable Colorblind Compensation"}
-            </button>
-            <button onClick={toggleBlueFilter}>
-              {isBlueFilter
-                ? "Disable Blue Light Filter"
-                : "Enable Blue Light Filter"}
-            </button>
+
+            {/* SHOW ANOTHER EXAMPLE BUTTON */}
+            {showAfterAI && !showAnotherExample && (
+              <button onClick={() => setShowAnotherExample(true)}>
+                Show Another Example
+              </button>
+            )}
           </div>
         </div>
+
+        {/* SECOND EXAMPLE SECTION - SPANS THE SAME OVERLAY */}
+        {showAnotherExample && (
+          <div className="vision__overlay vision__overlay--expanded">
+            <div className="vision__overlay-content">
+              <img
+                className="vision__narrative-image"
+                src={showSecondExample ? afterAIImage2 : beforeAIImage2}
+                alt={showSecondExample ? "Another After AI Image" : "Another Before AI Image"}
+              />
+              <p className={showSecondExample ? "vision__narrative--after" : "vision__narrative"}>
+                {showSecondExample
+                  ? "The AI has enhanced the display to optimize readability and accessibility."
+                  : "This is another example of how AI can improve the gaming experience."}
+              </p>
+              <button onClick={() => setShowSecondExample(!showSecondExample)}>
+                {showSecondExample ? "Show Before AI" : "Show After AI"}
+              </button>
+
+              {/* CLOSE BUTTON */}
+              <button onClick={() => setShowAnotherExample(false)} className="vision__close-button">
+                Close
+              </button>
+            </div>
+          </div>
+        )}
       </div>
-    </div>
+    </>
   );
 }

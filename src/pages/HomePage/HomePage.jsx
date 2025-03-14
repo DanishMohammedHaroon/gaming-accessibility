@@ -42,10 +42,10 @@ export default function HomePage({}) {
                 <Link to="/vision" className="drawer__item">
                   Vision
                 </Link>
-                <Link to="/cognitive" className="drawer__item">
+                <Link to="/hearing" className="drawer__item">
                   Hearing
                 </Link>
-                <Link to="/cognitive" className="drawer__item">
+                <Link to="/speech" className="drawer__item">
                   Speech
                 </Link>
                 <Link to="/neuro" className="drawer__item">
