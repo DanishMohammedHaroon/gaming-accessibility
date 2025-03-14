@@ -24,6 +24,7 @@ function HearingPage() {
 
   return (
     <>
+    <div className="wrapper"> 
     <Header />
     <section className="hearing">
       <div className="hearing__container">
@@ -46,6 +47,7 @@ function HearingPage() {
       </div>
       <audio ref={audioRef} src={audioFile} />
     </section>
+    </div>
     </>
   );
 }
