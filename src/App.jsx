@@ -19,14 +19,15 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/motor" element={<MotorPage />} />
-          <Route path="/neuro" element={<NeuroDivergencePage />} 
+          <Route path="/neuro" element={<NeuroDivergencePage />} />
           <Route path="/hearing" element={<HearingPage />} />
           <Route path="/cognitive" element={<CognitivePage />} />
+          <Route path="/general" element={<GeneralPage />} />
           <Route path="/vision" element={<VisionPage />} />
           <Route path="/general" element={<GeneralPage />} />  
         </Routes>
       </main>
-      {/* <Footer /> */}
+
     </BrowserRouter>
   );
 }

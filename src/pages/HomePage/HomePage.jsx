@@ -49,8 +49,11 @@ export default function HomePage({}) {
                 <Link to="/speech" className="drawer__item">
                   Speech
                 </Link>
-                <Link to="/neurodivergent" className="drawer__item">
+                <Link to="/neuro" className="drawer__item">
                   Neurodivergent
+                </Link>
+                <Link to="/general" className="drawer__item">
+                  General
                 </Link>
               </ul>
             </div>
