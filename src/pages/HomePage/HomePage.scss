@@ -5,3 +5,97 @@
   background-size: cover;
   color: #ffffff;
 }
+
+.nav {
+  padding: 4rem 6rem;
+
+  &__profile {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__name {
+  }
+
+  &__subscription {
+  }
+
+  &__avatar {
+    height: 4rem;
+  }
+
+  &__achievements {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  &__score {
+    font-size: 1rem;
+  }
+
+  &__icon {
+    height: 1.5rem;
+  }
+
+  &__list {
+    display: flex;
+    gap: 2rem;
+    padding-right: 8rem;
+  }
+
+  &__item {
+    height: 3rem;
+  }
+
+  &__info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__mic,
+  &__battery {
+    height: 1.5rem;
+  }
+}
+
+.games {
+  padding: 22rem 6rem 0 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  &__starfield {
+    height: 15rem;
+    border-radius: 1rem;
+    border: solid 0.25rem rgb(91, 170, 91);
+    box-shadow: 0 0 0.625rem rgb(25, 155, 25);
+    padding: 0.125rem;
+  }
+
+  &__img {
+    height: 10rem;
+    border-radius: 1rem;
+  }
+}
+
+.options {
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1rem;
+}
