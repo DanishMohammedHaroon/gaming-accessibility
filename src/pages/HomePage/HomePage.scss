@@ -1,76 +1,9 @@
 .homepage {
-  height: 100vh;
+  height: 100%;
   background-image: url("/src/assets/images/homepage.png");
   background-position: center;
   background-size: cover;
   color: #ffffff;
-}
-
-.nav {
-  padding: 4rem 6rem;
-
-  &__profile {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-  }
-
-  &__profile-details {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  &__user {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  &__name {
-  }
-
-  &__subscription {
-  }
-
-  &__avatar {
-    height: 4rem;
-  }
-
-  &__achievements {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-  }
-
-  &__score {
-    font-size: 1rem;
-  }
-
-  &__icon {
-    height: 1.5rem;
-  }
-
-  &__list {
-    display: flex;
-    gap: 2rem;
-    padding-right: 8rem;
-  }
-
-  &__item {
-    height: 3rem;
-  }
-
-  &__info {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-  }
-
-  &__mic,
-  &__battery {
-    height: 1.5rem;
-  }
 }
 
 .games {
@@ -91,13 +24,23 @@
     height: 10rem;
     border-radius: 1rem;
   }
+
+  &__container img {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &__container img:hover {
+    transform: scale(1.1);
+  }
 }
 
 .options {
   padding: 2rem 6rem;
   display: flex;
   justify-content: space-between;
-  border-radius: 1rem;
+  &__img {
+    border-radius: 1rem;
+  }
 }
 
 .drawer {
@@ -118,7 +61,7 @@
   }
 
   &__item {
-    color:white;
+    color: white;
     font-weight: 600;
   }
 }

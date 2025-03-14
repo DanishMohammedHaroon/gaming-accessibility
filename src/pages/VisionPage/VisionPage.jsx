@@ -5,6 +5,7 @@ import beforeAIImage from "../../assets/images/Vision_BeforeAI.png";
 import afterAIImage from "../../assets/images/Vision_AfterAI.png";
 import beforeAIImage2 from "../../assets/images/Vision2_BeforeAI.jpeg";
 import afterAIImage2 from "../../assets/images/Vision2_AfterAI.jpeg";
+import Header from "../../components/Header/Header";
 
 export default function VisionPage() {
   const [showAfterAI, setShowAfterAI] = useState(false);
@@ -13,6 +14,7 @@ export default function VisionPage() {
 
   return (
     <>
+      <Header />
       <div className="vision__container">
         <img
           className="vision__background-image"
@@ -30,7 +32,11 @@ export default function VisionPage() {
             />
 
             {/* TEXT */}
-            <p className={showAfterAI ? "vision__narrative--after" : "vision__narrative"}>
+            <p
+              className={
+                showAfterAI ? "vision__narrative--after" : "vision__narrative"
+              }
+            >
               {showAfterAI
                 ? "Time is breaking. Creatures are attacking. Get out now."
                 : "Time anomalies are wreaking havoc in Sector Gamma-9 due to 'The Nexus' artifact. Researchers are experiencing strange aging and memory issues, while local creatures have turned aggressive. Emergency evacuation is underway."}
@@ -42,19 +48,24 @@ export default function VisionPage() {
                 <div className="vision__info-box">
                   <strong>Dynamic UI & Contrast Adjustments:</strong>
                   <p>
-                    Using computer vision and user data, AI can adjust contrast, text size, and color schemes in real time to improve readability.
+                    Using computer vision and user data, AI can adjust contrast,
+                    text size, and color schemes in real time to improve
+                    readability.
                   </p>
                 </div>
                 <div className="vision__info-box">
                   <strong>Automated Screen Reader Integration:</strong>
                   <p>
-                    AI enhances screen reader functionalities by interpreting game interfaces and ensuring all essential information is read aloud.
+                    AI enhances screen reader functionalities by interpreting
+                    game interfaces and ensuring all essential information is
+                    read aloud.
                   </p>
                 </div>
                 <div className="vision__info-box">
                   <strong>Adaptive Field of View & Layouts:</strong>
                   <p>
-                    AI optimizes UI layouts by detecting when important elements might be off-screen, automatically adjusting placements.
+                    AI optimizes UI layouts by detecting when important elements
+                    might be off-screen, automatically adjusting placements.
                   </p>
                 </div>
               </div>
@@ -81,9 +92,19 @@ export default function VisionPage() {
               <img
                 className="vision__narrative-image"
                 src={showSecondExample ? afterAIImage2 : beforeAIImage2}
-                alt={showSecondExample ? "Another After AI Image" : "Another Before AI Image"}
+                alt={
+                  showSecondExample
+                    ? "Another After AI Image"
+                    : "Another Before AI Image"
+                }
               />
-              <p className={showSecondExample ? "vision__narrative--after" : "vision__narrative"}>
+              <p
+                className={
+                  showSecondExample
+                    ? "vision__narrative--after"
+                    : "vision__narrative"
+                }
+              >
                 {showSecondExample
                   ? "The AI has enhanced the display to optimize readability and accessibility."
                   : "This is another example of how AI can improve the gaming experience."}
@@ -93,7 +114,10 @@ export default function VisionPage() {
               </button>
 
               {/* CLOSE BUTTON */}
-              <button onClick={() => setShowAnotherExample(false)} className="vision__close-button">
+              <button
+                onClick={() => setShowAnotherExample(false)}
+                className="vision__close-button"
+              >
                 Close
               </button>
             </div>

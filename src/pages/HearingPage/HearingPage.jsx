@@ -1,17 +1,19 @@
 import "./HearingPage.scss";
-import windowsLogo from "/images-logos/windows.svg";
-import xboxLogo from "/images-logos/xbox.svg";
-// import speakerIcon from "./images-logos/speaker.png";
-// import audio from "../../../public/audio/test_audio.mp3"
+import windowsLogo from "../../assets/images-logos/windows.svg";
+import xboxLogo from "../../assets/images-logos/xbox.svg";
+import speakerIcon from "../../../public/mic-icon.png";
+import audioFile from "../../assets/audio/test_audio.mp3"; // Import audio from src/assets
+
 import React, { useState, useRef } from "react";
+import Header from "../../components/Header/Header";
 
 function HearingPage() {
   const [showText, setShowText] = useState(false);
   const audioRef = useRef(null);
-  const audioFilePath = "../../../public/audio/test_audio.mp3"; // Ensure this file exists in the public folder
 
   const playAudio = () => {
     if (audioRef.current) {
+      audioRef.current.load(); // Load the file
       audioRef.current.play();
     }
   };
@@ -21,11 +23,9 @@ function HearingPage() {
   };
 
   return (
+    <>
+    <Header />
     <section className="hearing">
-      <div className="hearing__icons">
-        <img className="hearing__windows" src={windowsLogo} alt="Windows Logo" />
-        <img className="hearing__xbox" src={xboxLogo} alt="Xbox Logo" />
-      </div>
       <div className="hearing__container">
         <div className="hearing__overlay">
           <img 
@@ -35,14 +35,18 @@ function HearingPage() {
             onClick={playAudio} 
             style={{ cursor: "pointer" }} 
           />
-          <button className="hearing__button" onClick={handleTranscription}>Click to Transcribe</button>
+          <button className="hearing__button" onClick={() => { handleTranscription(); playAudio(); }}>
+                Click to Transcribe
+            </button>
+
         </div>
         <div className="hearing__content">
+          {showText && <p className="hearing__text">Hello everyone. This is just a test audio to see if the app works.</p>}
         </div>
       </div>
-      <div className="hearaing_context"> {showText && <p className="hearing__text">Hello everyone. This is just a test audio to see if the app works.</p>}</div>
-      <audio ref={audioRef} src={audioFilePath} />
+      <audio ref={audioRef} src={audioFile} />
     </section>
+    </>
   );
 }
 
