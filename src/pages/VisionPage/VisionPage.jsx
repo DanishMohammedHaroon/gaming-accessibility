@@ -1,10 +1,10 @@
 import "./VisionPage.scss";
 import React, { useState } from "react";
-import Neuro from "./assets/neuro.jpg"; // Background image
-import normalFont from "./assets/normalFont.jpg"; // Base image to be filtered
-import Softner from "./Softner"; // Expects props: src, alt
-import Daltonization from "./Daltonization"; // Expects props: src, alt
-import BlueLightFilter from "./BlueLightFilter"; // Expects children
+import StarField from "/images-logos/starfield-2550-x-1138-background-25p3mym8n5bnvdlq.jpg"; // Background image
+import imageEdit from "/images-logos/Starfield-Review-Featured-Games.webp"; // Base image to be filtered
+import Softner from "../../components/Softner/Softner"; // Expects props: src, alt
+import Daltonization from "../../components/Daltonization/Daltonization"; // Expects props: src, alt
+import BlueLightFilter from "../../components/BlueLightFilter/BlueLightFilter"; // Expects children
 
 
 export default function EffectsPage() {
@@ -22,13 +22,21 @@ export default function EffectsPage() {
   // For Softner and Daltonization, we display one or the other.
   // If both are toggled, Daltonization takes precedence.
   let imageElement = (
-    <img className="neuro__normal" src={normalFont} alt="Neuro image" />
+    <img
+      className="vision__normal"
+      src={imageEdit}
+      alt="Vision image"
+    />
   );
   if (isSoft && !isColorblind) {
-    imageElement = <Softner src={normalFont} alt="Neuro image - soft" />;
+    imageElement = <Softner className="vision__normal" src={imageEdit} alt="Vision image - soft" />;
   } else if (isColorblind) {
     imageElement = (
-      <Daltonization src={normalFont} alt="Neuro image - daltonized" />
+      <Daltonization
+        className="vision__normal"
+        src={imageEdit}
+        alt="Vision image - daltonized"
+      />
     );
   }
 
@@ -38,14 +46,14 @@ export default function EffectsPage() {
   }
 
   return (
-    <div className="neuro__container">
+    <div className="vision__container">
       <img
-        className="neuro__background-image"
-        src={Neuro}
-        alt="Starfield Into The Starfield Wallpaper"
+        className="vision__background"
+        src={StarField}
+        alt="Starfield Wallpaper"
       />
       <div className="overlay">
-        <div className="overlay-content">
+        <div className="overlay__content">
           {/* Render the filtered image */}
           <div>{imageElement}</div>
           {/* Control buttons */}
