@@ -10,6 +10,7 @@ import HearingPage from "./pages/HearingPage/HearingPage";
 import CognitivePage from "./pages/CognitivePage/CognitivePage";
 import NeuroDivergencePage from "./pages/NeurodivergencePage/NeurodivergencePage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SpeechPage from "./pages/SpeechPage/SpeechPage";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
           <Route path="/cognitive" element={<CognitivePage />} />
           <Route path="/general" element={<GeneralPage />} />
           <Route path="/vision" element={<VisionPage />} />
-          <Route path="/general" element={<GeneralPage />} />
+          <Route path="/speech" element={<SpeechPage />} />
         </Routes>
       </main>
     </BrowserRouter>
