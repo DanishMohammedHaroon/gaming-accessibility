@@ -57,8 +57,8 @@ export default function SpeechPage({}) {
   return (
     <>
       <div className="speech">
-      <Header />
-        <h1>Assistive Speech</h1>
+        <Header />
+        <h1 className="speech__title">Assistive Speech</h1>
         <div className="speech__settings">
           <div className="button__group">
             <button className="speech__button" onClick={handleVoiceToTextClick}>
