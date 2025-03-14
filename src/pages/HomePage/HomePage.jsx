@@ -58,16 +58,25 @@ export default function HomePage({}) {
         {/* floating drawer menu */}
         {isDrawerOpen && (
           <div className="drawer">
-            <button className="drawer__close" onClick={toggleDrawer}>
-              ×
-            </button>
-            <ul>
-              <Link to={CognitivePage}>Cognitive</Link>
-              <Link to={CognitivePage}>Cognitive</Link>
-              <Link to={CognitivePage}>Cognitive</Link>
-              <Link to={CognitivePage}>Cognitive</Link>
-              <Link to={CognitivePage}>Cognitive</Link>
-              <Link to={CognitivePage}>Cognitive</Link>
+            <ul className="drawer__list">
+              <Link to="/cognitive" className="drawer__item">
+                Cognitive
+              </Link>
+              <Link to="/cognitive" className="drawer__item">
+                Cognitive
+              </Link>
+              <Link to="/cognitive" className="drawer__item">
+                Cognitive
+              </Link>
+              <Link to="/cognitive" className="drawer__item">
+                Cognitive
+              </Link>
+              <Link to="/cognitive" className="drawer__item">
+                Cognitive
+              </Link>
+              <Link to="/cognitive" className="drawer__item">
+                Cognitive
+              </Link>
             </ul>
           </div>
         )}
