@@ -7,6 +7,7 @@ import MotorPage from "./pages/MotorPage/MotorPage";
 import NeuroDivergencePage from "./pages/NeurodivergencePage/NeurodivergencePage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CognitivePage from "./pages/CognitivePage/CognitivePage";
+import VisionPage from "./pages/VisionPage/VisionPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/motor" element={<MotorPage />} />
           <Route path="/neuro" element={<NeuroDivergencePage />} />
           <Route path="/cognitive" element={<CognitivePage />} />
+          <Route path="/vision" element={<VisionPage />} />
         </Routes>
       </main>
       <Footer />
