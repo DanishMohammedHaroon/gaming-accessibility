@@ -5,6 +5,7 @@ import speakerIcon from "../../../public/mic-icon.png";
 import audioFile from "../../assets/audio/test_audio.mp3"; // Import audio from src/assets
 
 import React, { useState, useRef } from "react";
+import Header from "../../components/Header/Header";
 
 function HearingPage() {
   const [showText, setShowText] = useState(false);
