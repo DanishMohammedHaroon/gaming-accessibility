@@ -1,0 +1,172 @@
+body {
+  background-image: url("/xbox_background.jpg");
+}
+.speech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__image {
+    width: 40rem;
+    border-radius: 20px;
+    border: 1px solid blueviolet;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+  }
+
+  &__settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
+.image__container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-top: 3rem;
+  margin-right: 5rem;
+  gap: 1rem;
+}
+
+.button__group {
+  display: flex;
+  width: 15%;
+  gap: 10px;
+  margin-top: 5px;
+  margin-left: 2rem;
+  flex-direction: column;
+
+  p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: white;
+  }
+}
+
+.speech__button {
+  padding: 8px 1px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: #9985ff;
+  border-radius: 10px;
+  font-family: monospace;
+}
+
+.circle-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid orange;
+  background-color: #a55608;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 2rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 200px;
+  left: 720px;
+  width: 44.5%;
+  height: 47%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 21px;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.voice__box {
+  display: flex;
+  position: fixed;
+  bottom: 87px;
+  left: 12%;
+  transform: translateX(-50%);
+  background-color: #9985ff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  font-family: monospace;
+  gap: 10px;
+}
+
+.voice__icon {
+  width: 20px;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 68%;
+  left: 63%;
+  transform: translateX(-50%);
+  background: rgba(246, 214, 254, 0.8);
+  padding: 10px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  min-width: 200px;
+  opacity: 0.1;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+.reload-overlay {
+  position: absolute;
+  top: 30%;
+  left: 26.6%;
+  transform: translate(-20%, -20%);
+  background: rgba(173, 144, 255, 0.8);
+  padding: 40px 50px;
+  border-radius: 10px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  width: 44.5%;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards, fadeOut 0.5s ease-out 2.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
