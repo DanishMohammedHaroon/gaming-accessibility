@@ -10,7 +10,7 @@
     border: 1px solid blueviolet;
   }
 
-  h1 {
+  .speech__title {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
@@ -77,7 +77,7 @@
 
 .speechoverlay {
   position: absolute;
-  top: 28.5rem;
+  top: 27rem;
   left: 75rem;
   width: 40rem;
   height: 23rem;
