@@ -1,34 +1,51 @@
+import React, { useState } from "react";
 import "./NeurodivergencePage.scss";
-import WindowsLogo from "../../components/WindowsLogo/WindowsLogo.jsx";
-import XboxLogo from "../../components/XboxLogo/XboxLogo.jsx";
-import React from "react";
+import Neuro from "../../../src/assets/images/Starfield8.jpg";
+import normalFont from "../../../src/assets/images/Starfield-Mark-1-Spacesuit-Guide-10-750x422.webp"; 
+import dyslexicFont from "../../../src/assets/images/starfield-accessibility-fonts-mod-open-dyslexic.jpg"; 
 
-function NeuroDivergencePage() {
+export default function NeuroDivergencePage() {
+  const [showAfterAI, setShowAfterAI] = useState(false);
+
+  const toggleText = () => {
+    setShowAfterAI(!showAfterAI);
+  };
+
   return (
-    <div className="neuro__page">
-      <div className="neuro__logos">
-        <WindowsLogo className="neuro__xbox" />
-        <XboxLogo className="neuro__windows" />
-      </div>
-
-      <div className="image-section">
-        <div className="image-wrapper">
-          <img src="/minecraft1.png" alt="Minecraft normal text" />
-          <p className="description">
-            This is <strong>normal text</strong>.
-          </p>
+    <>
+      <div className="neuro__container">
+        <img
+          className="neuro__background-image"
+          src={Neuro}
+          alt="Starfield Into The Starfield Wallpaper"
+        />
+        <div className="overlay">
+          <div className="overlay-content">
+            <p
+              className={
+                showAfterAI ? "neuro__narrative--after" : "neuro__narrative"
+              }
+            >
+              {showAfterAI ? (
+                <img
+                  className="neuro__normal"
+                  src={dyslexicFont}
+                  alt="Starfield Into The Starfield inventory with normal dyslexic font"
+                />
+              ) : (
+                <img
+                  className="neuro__normal"
+                  src={normalFont}
+                  alt="Starfield Into The Starfield inventory with normal font"
+                />
+              )}
+            </p>
+            <button onClick={toggleText}>
+              {showAfterAI ? "Show Before AI" : "Show After AI"}
+            </button>
+          </div>
         </div>
-
-        <div className="image-wrapper">
-          <img src="/minecraft2.png" alt="Minecraft text for neurodivergent" />
-          <p className="description alt-font">
-            This is also normal text, <br />
-            but it’s more readable by neurodivergent users.
-          </p>
-        </div>
       </div>
-    </div>
+    </>
   );
 }
-
-export default NeuroDivergencePage;
