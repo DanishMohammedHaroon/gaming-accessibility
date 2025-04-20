@@ -61,7 +61,7 @@ This project is open-source under the **Misfit License**.
 
 ## 🤝 Contributors  
 Developed by **Team Misfits** as part of the Microsoft Industry Project.  
-- Danish Haroon
+- Danish Mohammed Haroon
 - Mimta Chowdhury
 - Renee Cheng
 - Zuya Abro
